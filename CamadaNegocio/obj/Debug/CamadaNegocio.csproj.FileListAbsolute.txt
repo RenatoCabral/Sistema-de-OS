@@ -1,0 +1,7 @@
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaNegocio\bin\Debug\CamadaNegocio.dll
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaNegocio\bin\Debug\CamadaNegocio.pdb
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaNegocio\bin\Debug\CamadaDados.dll
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaNegocio\bin\Debug\CamadaDados.pdb
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaNegocio\obj\Debug\CamadaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaNegocio\obj\Debug\CamadaNegocio.dll
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaNegocio\obj\Debug\CamadaNegocio.pdb

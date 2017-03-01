@@ -1,0 +1,5 @@
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaDados\bin\Debug\CamadaDados.dll
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaDados\bin\Debug\CamadaDados.pdb
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaDados\obj\Debug\CamadaDados.dll
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaDados\obj\Debug\CamadaDados.pdb
+C:\Users\carva\Documents\Visual Studio 2015\Projects\SysOS\CamadaDados\obj\Debug\CamadaDados.csprojResolveAssemblyReference.cache
