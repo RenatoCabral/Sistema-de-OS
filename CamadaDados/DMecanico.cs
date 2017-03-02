@@ -14,9 +14,9 @@ namespace CamadaDados
         private string _Nome;
         private decimal _Comissao;
         private decimal _Salario;
-        private string _Acesso;
-        private string _Usuario;
-        private string _Senha;
+        //private string _Acesso;
+        //private string _Usuario;
+        //private string _Senha;
         private string _TextoBuscar;
 
         public int Idmecanico
@@ -71,7 +71,7 @@ namespace CamadaDados
             }
         }
 
-        public string Acesso
+        /*public string Acesso
         {
             get
             {
@@ -82,9 +82,9 @@ namespace CamadaDados
             {
                 _Acesso = value;
             }
-        }
+        }*/
 
-        public string Usuario
+        /*public string Usuario
         {
             get
             {
@@ -108,7 +108,7 @@ namespace CamadaDados
             {
                 _Senha = value;
             }
-        }
+        }*/
 
         public string TextoBuscar
         {
@@ -130,15 +130,15 @@ namespace CamadaDados
         }
 
         /*Construtor com parametros*/
-        public DMecanico(int idmecanico, string nome, decimal comissao, decimal salario, string acesso, string usuario, string senha, string textbuscar)
+        public DMecanico(int idmecanico, string nome, decimal comissao, decimal salario, string textbuscar)
         {
             this.Idmecanico = idmecanico;
             this.Nome = nome;
             this.Comissao = comissao;
             this.Salario = salario;
-            this.Acesso = acesso;
-            this.Usuario = usuario;
-            this.Senha = senha;
+            //this.Acesso = acesso;
+            //this.Usuario = usuario;
+            //this.Senha = senha;
             this.TextoBuscar = textbuscar;
         }
 
@@ -186,7 +186,7 @@ namespace CamadaDados
                 //ParComissao.Size = 80;
                 ParSalario.Value = Mecanico.Salario;
                 SqlCmd.Parameters.Add(ParSalario);
-
+                /*
                 SqlParameter ParAcesso = new SqlParameter();
                 ParAcesso.ParameterName = "@acesso";
                 ParAcesso.SqlDbType = SqlDbType.VarChar;
@@ -207,6 +207,7 @@ namespace CamadaDados
                 ParSenha.Size = 20;
                 ParSenha.Value = Mecanico.Senha;
                 SqlCmd.Parameters.Add(ParSenha);
+                */
 
                 /*executar o comando*/
                 resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Registro não foi inserido";
@@ -263,7 +264,7 @@ namespace CamadaDados
                 //ParComissao.Size = 80;
                 ParSalario.Value = Mecanico.Salario;
                 SqlCmd.Parameters.Add(ParSalario);
-
+                /*
                 SqlParameter ParAcesso = new SqlParameter();
                 ParAcesso.ParameterName = "@acesso";
                 ParAcesso.SqlDbType = SqlDbType.VarChar;
@@ -284,6 +285,7 @@ namespace CamadaDados
                 ParSenha.Size = 20;
                 ParSenha.Value = Mecanico.Senha;
                 SqlCmd.Parameters.Add(ParSenha);
+                */
 
                 /*executar o comando*/
                 resp = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Registro não foi editado";

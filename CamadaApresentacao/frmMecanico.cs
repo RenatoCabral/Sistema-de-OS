@@ -44,9 +44,9 @@ namespace CamadaApresentacao
             this.txtNome.Text = string.Empty;
             this.txtComissao.Text = string.Empty;
             this.txtSalario.Text = string.Empty;
-            this.cbbAcesso.Text = string.Empty;
-            this.txtUsuario.Text = string.Empty;
-            this.txtSenha.Text = string.Empty;
+            //this.cbbAcesso.Text = string.Empty;
+            //this.txtUsuario.Text = string.Empty;
+            //this.txtSenha.Text = string.Empty;
         }
 
         /*Habilitar os text box*/
@@ -56,9 +56,9 @@ namespace CamadaApresentacao
             this.txtNome.ReadOnly = !valor;
             this.txtComissao.ReadOnly = !valor;
             this.txtSalario.ReadOnly = !valor;
-            this.txtUsuario.ReadOnly = !valor;
-            this.txtSenha.ReadOnly = !valor;
-            this.cbbAcesso.Enabled = valor;
+           // this.txtUsuario.ReadOnly = !valor;
+            //this.txtSenha.ReadOnly = !valor;
+            //this.cbbAcesso.Enabled = valor;
         }
 
         /*Habilitar os botoes*/
@@ -113,7 +113,7 @@ namespace CamadaApresentacao
             this.Mostrar();
             this.Habilitar(true);
             this.Botoes();
-            this.cbbAcesso.SelectedIndex = 0;
+            //this.cbbAcesso.SelectedIndex = 0;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -156,11 +156,11 @@ namespace CamadaApresentacao
                 {
                     if (this.eNovo)
                     {
-                        resp = NMecanico.Inserir(this.txtNome.Text.Trim(), Convert.ToDecimal(this.txtComissao.Text), Convert.ToDecimal(this.txtSalario.Text), this.cbbAcesso.Text, this.txtUsuario.Text.Trim(), txtSenha.Text.Trim());
+                        resp = NMecanico.Inserir(this.txtNome.Text.Trim(), Convert.ToDecimal(this.txtComissao.Text), Convert.ToDecimal(this.txtSalario.Text));
                     }
                     else
                     {
-                        resp = NMecanico.Editar(Convert.ToInt32(this.txtCodigo.Text), this.txtNome.Text.Trim(), Convert.ToDecimal(this.txtComissao.Text), Convert.ToDecimal(this.txtSalario.Text), this.cbbAcesso.Text, this.txtUsuario.Text.Trim(), txtSenha.Text.Trim());
+                        resp = NMecanico.Editar(Convert.ToInt32(this.txtCodigo.Text), this.txtNome.Text.Trim(), Convert.ToDecimal(this.txtComissao.Text), Convert.ToDecimal(this.txtSalario.Text));
                     }
 
                     if (resp.Equals("OK"))
@@ -233,9 +233,9 @@ namespace CamadaApresentacao
             this.txtNome.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["nome"].Value);
             this.txtComissao.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["comissao"].Value);
             this.txtSalario.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["salario"].Value);
-            this.cbbAcesso.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["acesso"].Value);
-            this.txtUsuario.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["usuario"].Value);
-            this.txtSenha.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["senha"].Value);         
+            //this.cbbAcesso.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["acesso"].Value);
+            //this.txtUsuario.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["usuario"].Value);
+            //this.txtSenha.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["senha"].Value);         
             this.tabControl1.SelectedIndex = 0;
         }
 
